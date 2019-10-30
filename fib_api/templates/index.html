@@ -1,0 +1,25 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color:grey;">
+    <div style="text-align: center;">
+            <h2>Fibonacci Results</h2>
+        <div class="container">
+            <form action="" method="GET">
+                <input type="search" placeholder="Enter The Numbers" name="number">
+                <button >Submit</button>
+            </form>
+            <div>
+                <p>Fibonacci sequence is : {{result}}</p>
+                <br/>
+                <p>Time: {{time_taken}} Seconds</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
